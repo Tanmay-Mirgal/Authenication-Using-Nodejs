@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/stylesheets/index.css">
+  <script>
+    <% if (typeof message !== 'undefined' && message) { %>
+      window.onload = function() {
+        alert('<%= message %>');
+      };
+    <% } %>
+  </script>
+</head>
+<body>
+  <header>
+    <ul style="position:absolute;right:0;padding-right:20px;z-index:1;">
+      <a class="headerItem" id="home">Home</a>
+      <a class="headerItem" id="about" href="/login">Login</a>
+      <a class="headerItem" id="contactUs" href="/signup">Sign Up</a>
+    </ul>
+  </header>
+  <div id="birdsContainer"><image src="https://clipart-library.com/img1/1663317.gif" height="100px" draggable="false"></div>
+  <div id="welcome">Welcome!</div>
+</body>
+</html>
